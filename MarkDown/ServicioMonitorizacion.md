@@ -19,13 +19,13 @@ Prometheus sirve para:
 - Analizar patrones de uso (carga, tráfico, rendimiento)  
 - Tomar decisiones basadas en datos (optimización de recursos)
 
-![PHOTTO1](../img/PHOTTO1.png)
-
 ---
 
 # ⚙️ Configuración de la instancia
 
 Se muestran las reglas de grupo de seguridad para acceder vía SSH y al puerto web de Prometheus.
+
+![PHOTTO1](../img/PHOTTO1.png)
 
 ![PHOTTO2](../img/PHOTTO2.png)
 
@@ -35,63 +35,31 @@ Se muestran las reglas de grupo de seguridad para acceder vía SSH y al puerto w
 
 ## 👤 Creo usuario Prometheus y sus carpetas
 
-```bash
-sudo useradd --no-create-home --shell /bin/false prometheus  
-sudo mkdir /etc/prometheus /var/lib/prometheus  
-sudo chown -R prometheus:prometheus /etc/prometheus /var/lib/prometheus  
-```
+![PHOTTO3](../img/PHOTTO3.png)
 
 ## 📥 Descargo Prometheus
 
-```bash
-cd /tmp  
-wget https://github.com/prometheus/prometheus/releases/download/v2.51.2/prometheus-2.51.2.linux-amd64.tar.gz  
-```
+![PHOTTO4](../img/PHOTTO4.png)
 
 ## 📦 Lo instalo
 
-```bash
-tar -xvzf prometheus-2.51.2.linux-amd64.tar.gz  
-```
-
-![PHOTTO3](../img/PHOTTO3.png)
+![PHOTTO5](../img/PHOTTO5.png)
 
 ---
 
 # 🧩 Configuración final y creación del servicio
 
+![PHOTTO6](../img/PHOTTO6.png)
+
 ## ✏️ Creo y edito el archivo del servicio de Prometheus
 
 Ruta del archivo: `/etc/systemd/system/prometheus.service`
 
-```ini
-[Unit]
-Description=Prometheus Monitoring
-Wants=network-online.target
-After=network-online.target
-
-[Service]
-User=prometheus
-Group=prometheus
-Type=simple
-ExecStart=/usr/local/bin/prometheus \
-  --config.file=/etc/prometheus/prometheus.yml \
-  --storage.tsdb.path=/var/lib/prometheus
-
-[Install]
-WantedBy=multi-user.target
-```
+![PHOTTO7](../img/PHOTTO7.png)
 
 ## ▶️ Activamos y comprobamos que funciona
 
-```bash
-sudo systemctl daemon-reexec
-sudo systemctl daemon-reload
-sudo systemctl start prometheus
-sudo systemctl status prometheus
-```
-
-![PHOTTO4](../img/PHOTTO4.png)
+![PHOTTO7](../img/PHOTTO7.png)
 
 ---
 
@@ -99,7 +67,7 @@ sudo systemctl status prometheus
 
 Prometheus se muestra correctamente accediendo desde el navegador.
 
-![PHOTTO5](../img/PHOTTO5.png)
+![PHOTTO8](../img/PHOTTO8.png)
 
 ---
 
@@ -113,7 +81,7 @@ Comando:
 prometheus_engine_query_duration_seconds
 ```
 
-![PHOTTO6](../img/PHOTTO6.png)
+![PHOTTO9](../img/PHOTTO9.png)
 
 ---
 
@@ -125,7 +93,7 @@ Comando:
 prometheus_tsdb_head_series
 ```
 
-![PHOTTO7](../img/PHOTTO7.png)
+![PHOTTO10](../img/PHOTTO10.png)
 
 ---
 
@@ -137,4 +105,4 @@ Comando:
 prometheus_tsdb_head_chunks
 ```
 
-![PHOTTO8](../img/PHOTTO8.png)
+![PHOTTO11](../img/PHOTTO11.png)
