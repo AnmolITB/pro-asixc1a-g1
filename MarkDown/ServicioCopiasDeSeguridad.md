@@ -44,11 +44,11 @@ Se muestran las reglas de grupo de seguridad para acceder vía **SSH** y al puer
 
 ![PHOTTTO3](../img/PHOTTTO6.png)
 
-## Descomprimo el archivo
+## Descomprimo  e instalo el archivo
 
 ![PHOTTTO3](../img/PHOTTTO7.png)
 
-## Instalo el Duplicati
+## Instalo el Net-Tools
 
 ![PHOTTTO4](../img/PHOTTTO8.png)
 
