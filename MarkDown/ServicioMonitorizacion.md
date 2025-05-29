@@ -59,7 +59,7 @@ Ruta del archivo: `/etc/systemd/system/prometheus.service`
 
 ## ▶️ Activamos y comprobamos que funciona
 
-![PHOTTO7](../img/PHOTTO7.png)
+![PHOTTO8](../img/PHOTTO8.png)
 
 ---
 
@@ -67,7 +67,7 @@ Ruta del archivo: `/etc/systemd/system/prometheus.service`
 
 Prometheus se muestra correctamente accediendo desde el navegador.
 
-![PHOTTO8](../img/PHOTTO8.png)
+![PHOTTO9](../img/PHOTTO9.png)
 
 ---
 
@@ -81,7 +81,7 @@ Comando:
 prometheus_engine_query_duration_seconds
 ```
 
-![PHOTTO9](../img/PHOTTO9.png)
+![PHOTTO10](../img/PHOTTO10.png)
 
 ---
 
@@ -93,7 +93,7 @@ Comando:
 prometheus_tsdb_head_series
 ```
 
-![PHOTTO10](../img/PHOTTO10.png)
+![PHOTTO11](../img/PHOTTO11.png)
 
 ---
 
@@ -105,4 +105,4 @@ Comando:
 prometheus_tsdb_head_chunks
 ```
 
-![PHOTTO11](../img/PHOTTO11.png)
+![PHOTTO12](../img/PHOTTO12.png)
