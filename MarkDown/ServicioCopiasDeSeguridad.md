@@ -9,9 +9,12 @@ Con ella, puedes programar y automatizar backups cifrados de tus archivos, ya se
 # 🚀 Lanzamiento de la instancia en AWS
 
 Entramos a AWS y iniciamos una instancia, selecciono la **Ubuntu Server 24.04 LTS**, la cual es perfecta para instalar este servicio.  
-Tipo **t3.small** porque para este servicio no hacen falta muchos recursos.
 
 ![PHOTTTO1](../img/PHOTTTO1.png)
+
+Tipo **t3.micro** porque para este servicio no hacen falta muchos recursos.
+
+![PHOTTTO2](../img/PHOTTTO2.png)
 
 ---
 
@@ -19,7 +22,7 @@ Tipo **t3.small** porque para este servicio no hacen falta muchos recursos.
 
 Se muestran las reglas de grupo de seguridad para acceder vía **SSH** y al puerto web de **Duplicati**.
 
-![PHOTTTO2](../img/PHOTTTO2.png)
+![PHOTTTO3](../img/PHOTTTO3.png)
 
 ---
 
@@ -27,11 +30,11 @@ Se muestran las reglas de grupo de seguridad para acceder vía **SSH** y al puer
 
 ## Hago un update
 
-![PHOTTTO3](../img/PHOTTTO3.png)
+![PHOTTTO3](../img/PHOTTTO4.png)
 
 ## Instalo el mono runtime
 
-![PHOTTTO3](../img/PHOTTTO4.png)
+![PHOTTTO3](../img/PHOTTTO5.png)
 
 ---
 
@@ -39,15 +42,15 @@ Se muestran las reglas de grupo de seguridad para acceder vía **SSH** y al puer
 
 ## Descargo el duplicati
 
-![PHOTTTO3](../img/PHOTTTO5.png)
+![PHOTTTO3](../img/PHOTTTO6.png)
 
 ## Descomprimo el archivo
 
-![PHOTTTO3](../img/PHOTTTO6.png)
+![PHOTTTO3](../img/PHOTTTO7.png)
 
 ## Instalo el Duplicati
 
-![PHOTTTO3](../img/PHOTTTO7.png)
+![PHOTTTO4](../img/PHOTTTO8.png)
 
 ## Edición del archivo de configuración del servicio
 
@@ -55,7 +58,7 @@ Se muestran las reglas de grupo de seguridad para acceder vía **SSH** y al puer
 sudo nano /etc/systemd/system/duplicati.service
 ```
 
-![PHOTTTO4](../img/PHOTTTO8.png)
+![PHOTTTO3](../img/PHOTTTO9.png)
 
 ---
 
@@ -63,11 +66,11 @@ sudo nano /etc/systemd/system/duplicati.service
 
 ## Vemos que funciona y que el servicio está en marcha
 
-![PHOTTTO3](../img/PHOTTTO9.png)
+![PHOTTTO5](../img/PHOTTTO10.png)
 
 ## Podemos usar el servicio desde la web
 
-![PHOTTTO5](../img/PHOTTTO10.png)
+![PHOTTTO6](../img/PHOTTTO11.png)
 
 ---
 
@@ -75,7 +78,7 @@ sudo nano /etc/systemd/system/duplicati.service
 
 ## Parámetros generales
 
-![PHOTTTO6](../img/PHOTTTO11.png)
+
 
 ---
 
