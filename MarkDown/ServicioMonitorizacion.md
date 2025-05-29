@@ -22,6 +22,15 @@ Prometheus sirve para:
 ---
 
 # ⚙️ Configuración de la instancia
+ 🧱 Creación de la Instancia
+
+Entramos a AWS y iniciamos una instancia, selecciono la AMI Ubuntu Server 22.04 LTS, la cual es perfecta para instalar este servicio.
+
+![BURRATA1](../img/BURRATA1.png)
+
+Tipo t3.small porque para este servicio no hacen falta muchos recursos.
+
+![BURRATA2](../img/BURRATA2.png)
 
 Se muestran las reglas de grupo de seguridad para acceder vía SSH y al puerto web de Prometheus.
 
