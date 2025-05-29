@@ -31,7 +31,7 @@ Así que tendremos que buscar sistemas SAI de estas especificaciones:
 SAI Lapara 6000VA / 6000W (Este proporciona 1 KW más de los que necesitamos, pero va bien para asegurar cuando se pongan a máxima carga todos los servidores).
 
 <p align="center">
-  <img src="../img/BIBI2.png" alt="Racks" width="40%" style="border:1px solid #ccc; border-radius:8px;" />
+  <img src="../img/BIBI2.png" alt="Racks" width="60%" style="border:1px solid #ccc; border-radius:8px;" />
 </p>
 ---
 
