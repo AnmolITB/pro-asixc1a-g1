@@ -27,17 +27,11 @@ Se muestran las reglas de grupo de seguridad para acceder vía **SSH** y al puer
 
 ## Hago un update
 
-```bash
-sudo apt update
-```
+![PHOTTTO3](../img/PHOTTTO3.png)
 
 ## Instalo el mono runtime
 
-```bash
-sudo apt install mono-runtime -y
-```
-
-![PHOTTTO3](../img/PHOTTTO3.png)
+![PHOTTTO3](../img/PHOTTTO4.png)
 
 ---
 
@@ -45,21 +39,15 @@ sudo apt install mono-runtime -y
 
 ## Descargo el duplicati
 
-```bash
-wget https://updates.duplicati.com/beta/duplicati_2.0.6.3-1_all.deb
-```
+![PHOTTTO3](../img/PHOTTTO5.png)
 
 ## Descomprimo el archivo
 
-```bash
-sudo dpkg -i --ignore-depends=libappindicator1 duplicati_2.0.6.3-1_all.deb
-```
+![PHOTTTO3](../img/PHOTTTO6.png)
 
 ## Instalo el Duplicati
 
-```bash
-sudo apt install net-tools -y
-```
+![PHOTTTO3](../img/PHOTTTO7.png)
 
 ## Edición del archivo de configuración del servicio
 
@@ -67,7 +55,7 @@ sudo apt install net-tools -y
 sudo nano /etc/systemd/system/duplicati.service
 ```
 
-![PHOTTTO4](../img/PHOTTTO4.png)
+![PHOTTTO4](../img/PHOTTTO8.png)
 
 ---
 
@@ -75,16 +63,11 @@ sudo nano /etc/systemd/system/duplicati.service
 
 ## Vemos que funciona y que el servicio está en marcha
 
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable duplicati
-sudo systemctl start duplicati
-sudo systemctl status duplicati
-```
+![PHOTTTO3](../img/PHOTTTO9.png)
 
 ## Podemos usar el servicio desde la web
 
-![PHOTTTO5](../img/PHOTTTO5.png)
+![PHOTTTO5](../img/PHOTTTO10.png)
 
 ---
 
@@ -92,42 +75,46 @@ sudo systemctl status duplicati
 
 ## Parámetros generales
 
-![PHOTTTO6](../img/PHOTTTO6.png)
+![PHOTTTO6](../img/PHOTTTO11.png)
 
 ---
 
 ## Creamos el directorio para guardar la copia
 
-```bash
-sudo mkdir -p /tmp/duplicati-test
-ls -lh /tmp/duplicati-test
-```
+![PHOTTTO7](../img/PHOTTTO12.png)
 
-![PHOTTTO7](../img/PHOTTTO7.png)
+![PHOTTTO3](../img/PHOTTTO13.png)
+
+## Aqui podemos ver que en este directorio no hay nada guardado
+
+![PHOTTTO3](../img/PHOTTTO14.png)
 
 ---
+## Ahora escojo el directorio para guardar el backup
+
+![PHOTTTO3](../img/PHOTTTO15.png)
 
 ## Escogemos el destino y probamos la conexión
 
-![PHOTTTO8](../img/PHOTTTO8.png)
+![PHOTTTO8](../img/PHOTTTO16.png)
 
 ---
 
 ## Escogemos los datos de origen
 
-![PHOTTTO9](../img/PHOTTTO9.png)
+![PHOTTTO9](../img/PHOTTTO18.png)
 
 ---
 
 ## Programamos la planificación de backups
 
-![PHOTTTO10](../img/PHOTTTO10.png)
+![PHOTTTO10](../img/PHOTTTO19.png)
 
 ---
 
 ## Definimos el tamaño del volumen y la política de retención
 
-![PHOTTTO11](../img/PHOTTTO11.png)
+![PHOTTTO11](../img/PHOTTTO20.png)
 
 ---
 
@@ -138,10 +125,12 @@ También podemos **forzar una copia manualmente**.
 
 ## Copia programada a las 13:00
 
+![PHOTTTO12](../img/PHOTTTO21.png)
+
 ## Ejecución manual y comprobación
 
-```bash
-ls -lh /tmp/duplicati-test
-```
+![PHOTTTO12](../img/PHOTTTO22.png)
 
-![PHOTTTO12](../img/PHOTTTO12.png)
+## Ahora volvemos a ver si hay archivos o datos en el directorio donde se guardan los backups
+
+![PHOTTTO12](../img/PHOTTTO23.png)
