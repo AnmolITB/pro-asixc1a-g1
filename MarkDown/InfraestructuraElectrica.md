@@ -1,7 +1,7 @@
 # 🔢 Cálculo del consumo estimado del sistema
 
 Primero calculamos el CONSUMO ESTIMADO DEL SISTEMA:  
-Número de servidores activos: 1  
+Número de servidores activos: 10  
 Consumo estimado por servidor: un servidor consume 700 W de media y con mucha carga, puede llegar a picos de 1000 W, por esta razón pondremos un margen de seguridad del 20%, para que los SAI puedan aguantar los servidores cuando estos están a máxima carga.
 
 **Consumo total:**  
